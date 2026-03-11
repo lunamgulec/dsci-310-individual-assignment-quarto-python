@@ -7,12 +7,6 @@
 # 	reports/qmd_example.html \
 # 	reports/qmd_example.pdf
 
-# all: results/horse_pop_plot_largest_sd.png \
-# 	results/horse_pops_plot.png \
-# 	results/horses_spread.csv \
-# 	docs/index.html \
-# 	reports/qmd_example.pdf
-
 all: results/horse_pop_plot_largest_sd.png \
 	results/horse_pops_plot.png \
 	results/horses_spread.csv \
@@ -25,8 +19,8 @@ results/horse_pop_plot_largest_sd.png results/horse_pops_plot.png results/horses
 		--out_dir="results"
 
 # render quarto report in HTML and PDF
-reports/qmd_example.html: results reports/qmd_example.qmd
-	quarto render reports/qmd_example.qmd --to html
+# reports/qmd_example.html: results reports/qmd_example.qmd
+# 	quarto render reports/qmd_example.qmd --to html
 
 # reports/qmd_example.pdf: results reports/qmd_example.qmd
 # 	quarto render reports/qmd_example.qmd --to pdf
