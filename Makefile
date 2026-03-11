@@ -16,7 +16,8 @@
 all: results/horse_pop_plot_largest_sd.png \
 	results/horse_pops_plot.png \
 	results/horses_spread.csv \
-	docs/index.html
+	docs/index.html \
+	docs/index.pdf
 
 # generate figures and objects for report
 results/horse_pop_plot_largest_sd.png results/horse_pops_plot.png results/horses_spread.csv: source/generate_figures.py
@@ -32,6 +33,9 @@ reports/qmd_example.html: results reports/qmd_example.qmd
 
 docs/index.html: results reports/qmd_example.qmd
 	quarto render reports/qmd_example.qmd --to html --output-dir docs --output index.html
+
+docs/index.pdf: report.qmd
+	quarto render report.qmd --to pdf --output-dir docs
 
 # clean
 clean:

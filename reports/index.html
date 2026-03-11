@@ -21,7 +21,27 @@ ul.task-list li input[type="checkbox"] {
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
 }
-</style>
+/* CSS for citations */
+div.csl-bib-body { }
+div.csl-entry {
+  clear: both;
+  margin-bottom: 0em;
+}
+.hanging-indent div.csl-entry {
+  margin-left:2em;
+  text-indent:-2em;
+}
+div.csl-left-margin {
+  min-width:2em;
+  float:left;
+}
+div.csl-right-inline {
+  margin-left:2em;
+  padding-left:1em;
+}
+div.csl-indent {
+  margin-left: 2em;
+}</style>
 
 
 <script src="qmd_example_files/libs/clipboard/clipboard.min.js"></script>
@@ -118,11 +138,11 @@ window.Quarto = {
 </section>
 <section id="data" class="level1">
 <h1>Data</h1>
-<p>Horse population data were sourced from the <a href="http://open.canada.ca/en/open-data">Government of Canada’s Open Data website</a> <span class="citation" data-cites="government2017a government2017b">(<a href="#ref-government2017a" role="doc-biblioref"><strong>government2017a?</strong></a>; <a href="#ref-government2017b" role="doc-biblioref"><strong>government2017b?</strong></a>)</span></p>
+<p>Horse population data were sourced from the <a href="http://open.canada.ca/en/open-data">Government of Canada’s Open Data website</a> <span class="citation" data-cites="horses1 horses2">(<a href="#ref-horses1" role="doc-biblioref">Government of Canada 2017a</a>, <a href="#ref-horses2" role="doc-biblioref">2017b</a>)</span></p>
 </section>
 <section id="methods" class="level1">
 <h1>Methods</h1>
-<p>The Python programming language <span class="citation" data-cites="vanrossum2009">(<a href="#ref-vanrossum2009" role="doc-biblioref"><strong>vanrossum2009?</strong></a>)</span> and the following Python packages were used to perform the analysis: pandas <span class="citation" data-cites="mckinney2010">(<a href="#ref-mckinney2010" role="doc-biblioref"><strong>mckinney2010?</strong></a>)</span>, altair <span class="citation" data-cites="vanderplas2018">(<a href="#ref-vanderplas2018" role="doc-biblioref"><strong>vanderplas2018?</strong></a>)</span>, click <span class="citation" data-cites="click2020">(<a href="#ref-click2020" role="doc-biblioref"><strong>click2020?</strong></a>)</span>, as well as Quarto <span class="citation" data-cites="allaire2022">(<a href="#ref-allaire2022" role="doc-biblioref"><strong>allaire2022?</strong></a>)</span>. <em>Note: this report is adapted from <span class="citation" data-cites="timbers2020">(<a href="#ref-timbers2020" role="doc-biblioref"><strong>timbers2020?</strong></a>)</span>.</em></p>
+<p>The Python programming language <span class="citation" data-cites="Python">(<a href="#ref-Python" role="doc-biblioref">Van Rossum and Drake 2009</a>)</span> and the following Python packages were used to perform the analysis: pandas <span class="citation" data-cites="pandas">(<a href="#ref-pandas" role="doc-biblioref">McKinney 2010</a>)</span>, altair <span class="citation" data-cites="altair">(<a href="#ref-altair" role="doc-biblioref">VanderPlas 2018</a>)</span>, click <span class="citation" data-cites="click">(<a href="#ref-click" role="doc-biblioref">Team 2020</a>)</span>, as well as Quarto <span class="citation" data-cites="Allaire_Quarto_2022">(<a href="#ref-Allaire_Quarto_2022" role="doc-biblioref">Allaire et al. 2022</a>)</span>. <em>Note: this report is adapted from <span class="citation" data-cites="ttimbers-horses">(<a href="#ref-ttimbers-horses" role="doc-biblioref">Timbers 2020</a>)</span>.</em></p>
 </section>
 <section id="results" class="level1">
 <h1>Results</h1>
@@ -145,7 +165,7 @@ Figure&nbsp;1: Horse populations for all provinces in Canada from 1906 - 1972.
 Table&nbsp;1: Standard deviation of historical (1906–1972) horse populations for each Canadian province.
 </figcaption>
 <div aria-describedby="tbl-horse-sd-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-<div class="cell-output cell-output-display cell-output-markdown" data-execution_count="3">
+<div class="cell-output cell-output-display cell-output-markdown" data-execution_count="2">
 <table class="do-not-create-environment cell caption-top table table-sm table-striped small">
 <thead>
 <tr class="header">
@@ -212,11 +232,37 @@ Figure&nbsp;2: Horse populations for the province with the largest standard devi
 </div>
 <p>In <a href="#fig-largest-sd" class="quarto-xref">Figure&nbsp;2</a> we zoom in and look at the province of Saskatchewan, which had the largest spread of values in terms of standard deviation.</p>
 </section>
-<section id="references" class="level1">
-<h1>References</h1>
+<section id="references" class="level1 unnumbered">
+
+
 </section>
 
-</main>
+<div id="quarto-appendix" class="default"><section class="quarto-appendix-contents" role="doc-bibliography" id="quarto-bibliography"><h2 class="anchored quarto-appendix-heading">References</h2><div id="refs" class="references csl-bib-body hanging-indent" data-entry-spacing="0" role="list">
+<div id="ref-Allaire_Quarto_2022" class="csl-entry" role="listitem">
+Allaire, J. J., Charles Teague, Carlos Scheidegger, Yihui Xie, and Christophe Dervieux. 2022. <span>“<span>Quarto</span>.”</span> <a href="https://doi.org/10.5281/zenodo.5960048">https://doi.org/10.5281/zenodo.5960048</a>.
+</div>
+<div id="ref-horses1" class="csl-entry" role="listitem">
+Government of Canada. 2017a. <span>“Horses, Number on Farms at June 1 and at December 1.”</span> Open Government - Open Data. <a href="https://open.canada.ca/data/en/dataset/a3ecf553-8ec4-4551-a0fe-8df1472c6cf7">https://open.canada.ca/data/en/dataset/a3ecf553-8ec4-4551-a0fe-8df1472c6cf7</a>.
+</div>
+<div id="ref-horses2" class="csl-entry" role="listitem">
+———. 2017b. <span>“Horses, Number on Farms at June 1, Farm Value Per Head and Total Farm Value.”</span> Open Government - Open Data. <a href="https://open.canada.ca/data/en/dataset/e175ef9c-98f0-49b3-8131-ca0e3895a0cb">https://open.canada.ca/data/en/dataset/e175ef9c-98f0-49b3-8131-ca0e3895a0cb</a>.
+</div>
+<div id="ref-pandas" class="csl-entry" role="listitem">
+McKinney, Wes. 2010. <span>“Data Structures for Statistical Computing in Python.”</span> In <em>Proceedings of the 9th Python in Science Conference</em>, edited by Stéfan van der Walt and Jarrod Millman, =51–56.
+</div>
+<div id="ref-click" class="csl-entry" role="listitem">
+Team, Pallets. 2020. <em>Click</em>. <a href="https://click.palletsprojects.com/">https://click.palletsprojects.com/</a>.
+</div>
+<div id="ref-ttimbers-horses" class="csl-entry" role="listitem">
+Timbers, Tiffany. 2020. <em>Historical Horse Population in Canada</em>. <a href="https://github.com/ttimbers/equine_numbers_value_canada_parameters">https://github.com/ttimbers/equine_numbers_value_canada_parameters</a>.
+</div>
+<div id="ref-Python" class="csl-entry" role="listitem">
+Van Rossum, Guido, and Fred L. Drake. 2009. <em>Python 3 Reference Manual</em>. Scotts Valley, CA: CreateSpace.
+</div>
+<div id="ref-altair" class="csl-entry" role="listitem">
+VanderPlas, Jake. 2018. <span>“Altair: Interactive Statistical Visualizations for Python.”</span> <em>Journal of Open Source Software</em> 3 (7825, 32): 1057. <a href="https://doi.org/10.21105/joss.01057">https://doi.org/10.21105/joss.01057</a>.
+</div>
+</div></section></div></main>
 <!-- /main column -->
 <script id="quarto-html-after-body" type="application/javascript">
   window.document.addEventListener("DOMContentLoaded", function (event) {
