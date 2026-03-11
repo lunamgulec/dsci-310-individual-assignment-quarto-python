@@ -34,8 +34,8 @@ reports/qmd_example.html: results reports/qmd_example.qmd
 docs/index.html: results reports/qmd_example.qmd
 	quarto render reports/qmd_example.qmd --to html --output-dir docs --output index.html
 
-docs/index.pdf: report.qmd
-	quarto render report.qmd --to pdf --output-dir docs
+docs/index.pdf: results reports/qmd_example.qmd
+	quarto render reports/qmd_example.qmd --to pdf --output-dir docs --output index.pdf
 
 # clean
 clean:
