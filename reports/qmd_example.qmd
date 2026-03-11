@@ -39,7 +39,7 @@ as well as Quarto [@Allaire_Quarto_2022].
 
 # Results
 
-![Horse populations for all provinces in Canada from 1906 - 1972.](../results/horse_pops_plot.png){#fig-horse-pop}
+![Horse populations for all provinces in Canada from 1906 - 1972.](../results/horse_pops_plot.png){#fig-horse-pop fig-width=65%}
 
 We can see from @fig-horse-pop that Ontario, Saskatchewan and Alberta 
 have had the highest horse populations in Canada. 
@@ -69,7 +69,7 @@ $$s = \sqrt{\frac{\sum_{i=1}^N (x_i - \overline{x})^2}{N-1} }$$
 
 Additionally, note that in @tbl-horse-sd we consider the sample standard deviation of the number of horses during the same time span as @fig-horse-pop.
 
-![Horse populations for the province with the largest standard deviation.](../results/horse_pops_plot_largest_sd.png){#fig-largest-sd width=65%}
+![Horse populations for the province with the largest standard deviation.](../results/horse_pops_plot_largest_sd.png){#fig-largest-sd fig-width=65%}
 
 In @fig-largest-sd we zoom in and look at the province of `{python} largest_sd`, which had the largest spread of values in terms of standard deviation.
 
