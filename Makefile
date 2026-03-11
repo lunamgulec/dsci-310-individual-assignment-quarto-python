@@ -4,8 +4,8 @@
 all: results/horse_pop_plot_largest_sd.png \
 	results/horse_pops_plot.png \
 	results/horses_spread.csv \
-	docs/index.html \
-	docs/index.pdf
+	docs/qmd_example.html \
+	docs/qmd_example.pdf
 
 # generate figures and objects for report
 results/horse_pop_plot_largest_sd.png results/horse_pops_plot.png results/horses_spread.csv: source/generate_figures.py
