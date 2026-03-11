@@ -7,11 +7,16 @@
 # 	reports/qmd_example.html \
 # 	reports/qmd_example.pdf
 
+# all: results/horse_pop_plot_largest_sd.png \
+# 	results/horse_pops_plot.png \
+# 	results/horses_spread.csv \
+# 	docs/index.html \
+# 	reports/qmd_example.pdf
+
 all: results/horse_pop_plot_largest_sd.png \
 	results/horse_pops_plot.png \
 	results/horses_spread.csv \
-	docs/index.html \
-	reports/qmd_example.pdf
+	docs/index.html
 
 # generate figures and objects for report
 results/horse_pop_plot_largest_sd.png results/horse_pops_plot.png results/horses_spread.csv: source/generate_figures.py
