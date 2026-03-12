@@ -4,9 +4,9 @@ author: "Tiffany Timbers & Jordan Bourak"
 format: 
     html:
         toc: true
+        format-links: ["pdf"]
     pdf:
         toc: true
-        output-file: qmd_example.pdf
 bibliography: references.bib
 execute:
     echo: false
