@@ -5,6 +5,7 @@ format:
     html:
         toc: true
         format-links: ["pdf"]
+        embed-resources: true
     pdf:
         toc: true
 bibliography: references.bib
